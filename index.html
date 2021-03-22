@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<!-- Written by Martin J. R. Jensen -->
+	<head>
+		<!-- Import styles -->
+		<link rel="stylesheet" href="css/h1.css">
+		<link rel="stylesheet" href="css/verse.css">
+		
+		<!-- Tab info -->
+		<title>Odense LMU</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">  
+	</head>
+	<body>
+		<a href="test.html"><img src="img/logo.png" width="200"></a>
+		<h1>Velkommen til Odense <abbr title="Luthersk Missions Unge">LMU</abbr></h1>
+		<p>This is a paragraph. But this is a <a href="https://www.google.com" target="_blank">link.</a></p>
+		<verse>
+			<script src="js/Verse.js"></script>
+		</verse>
+		
+		<ul>
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+			<li>List item 4</li>
+		</ul>
+		
+		<ol>
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+			<li>List item 4</li>
+		</ol>
+		
+		<table>
+			<thead>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Age</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John Doe</td>
+					<td>jdoe@something.com</td>
+					<td>45</td>
+				</tr>
+				<tr>
+					<td>John Doe</td>
+					<td>jdoe@something.com</td>
+					<td>45</td>
+				</tr>
+				<tr>
+					<td>John Doe</td>
+					<td>jdoe@something.com</td>
+					<td>45</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<br>
+		<hr>
+		<br>
+		
+		<form action="process.php" method="POST">
+			<div>
+				<label>First name</label>
+				<input type="text" name="firstName" placeholder="Enter first name">
+			</div>
+			<br>
+			<div>
+				<label>Last name</label>
+				<input type="text" name="lastName">
+			</div>
+			<br>
+			<div>
+				<label>Email</label>
+				<input type="email" name="email">
+			</div>
+			<br>
+			<div>
+				<label>Message</label>
+				<textarea name="message"></textarea>
+			</div>
+			<br>
+			<div>
+				<label>Message</label>
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="male">Female</option>
+					<option value="male">Other</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<label>Age:</label>
+				<input type="number" name="age" value="30">
+			</div>
+			<br>
+			<div>
+				<label>Birthday:</label>
+				<input type="date" name="birthday">
+			</div>
+			<br>
+			<input type="submit" name="submit" value="Submit">
+		</form>
+		
+		<button click="someFunction">Click me</button>
+		
+		<div style="margin-top:500px"></div>
+	</body>
+</html>

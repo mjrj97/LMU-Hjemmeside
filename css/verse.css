@@ -1,0 +1,12 @@
+verse {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+  
+	font-size: 14px;
+	font-style: italic;
+	font-family:'Arvo';
+	color:#076973;
+	text-align: right;
+	line-height: 1.6;
+}
