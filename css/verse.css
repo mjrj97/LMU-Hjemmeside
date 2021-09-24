@@ -1,7 +1,11 @@
 verse {
 	display: inline-block;
-	vertical-align: middle;
-	line-height: normal;
+	width: 820px;
+	padding-top: 45px;
+	padding-bottom: 30px;
+	padding-left: 400px;
+	padding-right: 57px;
+	box-sizing: border-box;
   
 	font-size: 14px;
 	font-style: italic;

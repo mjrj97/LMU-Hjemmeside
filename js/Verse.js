@@ -65,7 +65,7 @@ var verse = getVerse(ref);
 var link = "https://www.bibelselskabet.dk/brugbibelen/bibelenonline/" + book + "/" + chapter + "#" + verse;
 
 document.write("\"" + txt + "\"<br>- " + ref.link(link));
-document.write("<br><p style=\"font-size:9px\">(Ugens vers)</p>");
+document.write("<br><p style=\"font-size:9px;line-height:0\">(Ugens vers)</p>");
 
 function getBook(str) {
 	var start = 0;
