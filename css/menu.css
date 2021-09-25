@@ -17,6 +17,23 @@
 	font-size: 16px;
 }
 
+#program-button {
+	background-color: #999999;
+	border: none;
+	margin-top: 20px;
+	width: 165px;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	display: inline-block;
+	font-family:'Arvo';
+	font-size: 16px;
+}
+
+#program-button:hover {
+	background-color: #696969;
+}
+
 #main-menu-button:hover {
 	background-color: #15808B;
 }

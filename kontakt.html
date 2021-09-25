@@ -23,7 +23,7 @@
 				</verse>
 			</div>
 			<div id="main-menu">
-				<button id="main-menu-button" onclick="location.href='index.html'" style="background-color: #15808B">Forside</button>
+				<button id="main-menu-button" onclick="location.href='index.html'">Forside</button>
 				<div class="dropdown">
 					<button id="main-menu-button" onclick="location.href='om-os/index.html'">Om os</button>
 					<div class="dropdown-content">
@@ -36,11 +36,23 @@
 				<button id="main-menu-button" onclick="location.href='program/index.html'">Program</button>
 				<button id="main-menu-button" onclick="location.href='bibelstudie/index.html'">Bibelstudie</button>
 				<button id="main-menu-button" onclick="location.href='bliv-medlem.html'">Bliv medlem</button>
-				<button id="main-menu-button" onclick="location.href='kontakt.html'">Kontakt</button>
+				<button id="main-menu-button" onclick="location.href='kontakt.html'" style="background-color: #15808B">Kontakt</button>
 			</div>
 			<div id="body">
-				<div id="full-image">
-				<img src="filer/Billeder/Mødelokalet.jpg" style="width: 100%; position: relative; top: -120px">
+				<div id="body-contents">
+					<div style="width: 40%">
+						<h1>Kontakt</h1>
+						Ønsker du at sende en besked til Odense LMU, kan du udfylde nedenstående kontaktformular, eller sende en mail til <a href="mailto:odense@lmu.dk">odense@lmu.dk</a>.<br>
+						<form action=”mailto:formand@odenselmu.dk” method="POST" style="margin-top: 10px">
+							<label for="fname">Navn *</label><br>
+							<input type="text" id="fname" name="fname" style="margin-bottom: 15px; height: 24px; width: 250px; border-color:#EEEEEE" required><br>
+							<label for="lname">Email *</label><br>
+							<input type="text" id="lname" name="lname" style="margin-bottom: 10px; height: 24px; width: 250px; border-color:#EEEEEE" required><br>
+							<label for="lname">Besked *</label><br>
+							<textarea name="comment" form="usrform" style="height: 100px; width: 250px; font-family:'Arvo'; border-color:#D0D0D0; border-width: 2px" required></textarea><br>
+							<input type="submit" value="Send" id="program-button" style="width: 100px;">
+						</form> 
+					</div>
 				</div>
 			</div>
 			<div id="footer">
