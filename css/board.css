@@ -1,0 +1,21 @@
+.bestyrelsenBillede {
+	object-fit: cover;
+	width: 164px;
+	height: 200px
+}
+
+.bestyrelsen {
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 26px;
+	padding-bottom: 0px;
+	width: 200px;
+}
+
+.bestyrelsenText {
+	padding-left: 18px;
+	font-family:'Arvo';
+	font-size: 12px;
+	line-height: 1.6;
+	vertical-align: top;
+}

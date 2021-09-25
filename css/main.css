@@ -100,3 +100,20 @@ h2 {
 	margin-top: 32px;
 	margin-bottom: 20px;
 }
+
+
+    .bestyrelsenBillede {
+        object-fit: cover;
+    }
+    .bestyrelsen {
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-bottom: 8px;
+    }
+    .bestyrelsenText {
+        padding-left: 18px;
+        font-family:'Arvo';
+        font-size: 12px;
+        line-height: 1.6;
+        vertical-align: top;
+    }
