@@ -1,11 +1,9 @@
 verse {
 	display: inline-block;
-	width: 820px;
 	padding-top: 45px;
-	padding-bottom: 30px;
-	padding-left: 400px;
 	padding-right: 57px;
 	box-sizing: border-box;
+	margin-left: auto;
   
 	font-size: 14px;
 	font-style: italic;
@@ -13,4 +11,5 @@ verse {
 	color:#076973;
 	text-align: right;
 	line-height: 1.6;
+	width: 450px;
 }

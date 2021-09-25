@@ -10,38 +10,53 @@
 		
 		<!-- Tab info -->
 		<title>Odense LMU</title>
-		<link rel="icon" href="img/favicon.ico" type="image/x-icon">  
+		<link rel="icon" href="files/Billeder/logoer/favicon.ico" type="image/x-icon">  
 	</head>
 	<body id="background-css">
-		<div id="header">
-			<div id="logo">
-				<a href="index.html"><img src="img/logo.png" class="center" width="200"></a>
+		<div id="column">
+			<div id="header">
+				<div id="logo">
+					<a href="index.html"><img src="files/Billeder/logoer/logo.png" class="center" width="200"></a>
+				</div>
+				<verse>
+					<script src="js/Verse.js"></script>
+				</verse>
 			</div>
-			<verse>
-				<script src="js/Verse.js"></script>
-			</verse>
-		</div>
-		<div id="main-menu">
-			<button id="main-menu-button" onclick="location.href='index.html'">Forside</button>
-			<div class="dropdown">
-				<button id="main-menu-button" onclick="location.href='index.html'">Om os</button>
-				<div class="dropdown-content">
-					<a href="test.html">Grundlag</a>
-					<a href="#">Politikker</a>
-					<a href="#">Bestyrelsen</a>
-					<a href="#">Find vej</a>
+			<div id="main-menu">
+				<button id="main-menu-button" onclick="location.href='index.html'" style="background-color: #15808B">Forside</button>
+				<div class="dropdown">
+					<button id="main-menu-button" onclick="location.href='index.html'">Om os</button>
+					<div class="dropdown-content">
+						<a href="#">Grundlag</a>
+						<a href="#">Politikker</a>
+						<a href="#">Bestyrelsen</a>
+						<a href="#">Find vej</a>
+					</div>
+				</div>
+				<button id="main-menu-button" onclick="location.href='index.html'">Program</button>
+				<button id="main-menu-button" onclick="location.href='index.html'">Bibelstudie</button>
+				<button id="main-menu-button" onclick="location.href='index.html'">Bliv medlem</button>
+				<button id="main-menu-button" onclick="location.href='index.html'">Kontakt</button>
+			</div>
+			<div id="body">
+				<div id="full-image">
+				<img src="files/Billeder/Mødelokalet.jpg" style="width: 100%; position: relative; top: -120px">
 				</div>
 			</div>
-			<button id="main-menu-button" onclick="location.href='index.html'">Program</button>
-			<button id="main-menu-button" onclick="location.href='index.html'">Bibelstudie</button>
-			<button id="main-menu-button" onclick="location.href='index.html'">Bliv medlem</button>
-			<button id="main-menu-button" onclick="location.href='index.html'">Kontakt</button>
-		</div>
-		<div id="body">
-			<h1>Velkommen til Odense LMU</h1>
-		</div>
-		<div id="footer">
-			
+			<div id="footer">
+				<div id="footer-contact">
+					Luthersk Missions Unge i Odense</br>
+					Rosenlunden 15</br>
+					5000 Odense C</br>
+					odense@lmu.dk</br>
+					CVR-nr.: 30789334
+				</div>
+				<div id="footer-media">
+					<a href="https://www.lmbu.dk/lmu"><img src="files/Billeder/logoer/Medie-LMU.png" class="media"></a></br>
+					<a href="https://lmfyn.dk/"><img src="files/Billeder/logoer/Medie-LM.png" class="media"></a></br>
+					<a href="https://www.facebook.com/groups/odenselmu/"><img src="files/Billeder/logoer/Medie-Facebook.png" class="media"></a>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
