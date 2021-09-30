@@ -100,3 +100,20 @@ h2 {
 	margin-top: 32px;
 	margin-bottom: 20px;
 }
+
+.table, .th {
+	border: 1px solid grey;
+	border-spacing: 0px;
+	padding: 5px;
+	font-family:'Arvo';
+}
+
+.td {
+	border: 1px solid grey;
+	vertical-align: top;
+	text-align: center;
+	padding: 5px;
+	font-family:'Arvo';
+	font-size: 14px;
+	line-height: 1.6;
+}
