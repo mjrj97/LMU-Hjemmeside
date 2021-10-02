@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<!-- Written by Martin J. R. Jensen -->
+	<head>
+		<!-- Import styles -->
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/verse.css">
+		<link rel="stylesheet" href="../css/menu.css">
+		<meta charset="UTF-8">
+		
+		<!-- Tab info -->
+		<title>Opgaver | Odense LMU - Luthersk Missions Unge i Odense</title>
+		<link rel="icon" href="../filer/Billeder/logoer/favicon.ico" type="image/x-icon">  
+	</head>
+	<body id="background-css">
+		<div id="column">
+			<div id="header">
+				<div id="logo">
+					<a href="../index.html"><img src="../filer/Billeder/logoer/logo.png" class="center" width="200"></a>
+				</div>
+				<verse>
+					<script src="../js/Verse.js"></script>
+				</verse>
+			</div>
+			<div id="main-menu">
+				<button id="main-menu-button" onclick="location.href='../index.html'">Forside</button>
+				<div class="dropdown">
+					<button id="main-menu-button" onclick="location.href='../om-os/index.html'">Om os</button>
+					<div class="dropdown-content">
+						<a href="../om-os/grundlag.html">Grundlag</a>
+						<a href="../om-os/politikker.html">Politikker</a>
+						<a href="../om-os/bestyrelsen.html">Bestyrelsen</a>
+						<a href="../om-os/find-vej.html">Find vej</a>
+					</div>
+				</div>
+				<button id="main-menu-button" onclick="location.href='../program/index.html'" style="background-color: #15808B">Program</button>
+				<button id="main-menu-button" onclick="location.href='../bibelstudie/index.html'">Bibelstudie</button>
+				<button id="main-menu-button" onclick="location.href='../bliv-medlem.html'">Bliv medlem</button>
+				<button id="main-menu-button" onclick="location.href='../kontakt.html'">Kontakt</button>
+			</div>
+			<div id="body">
+				<div id="body-contents">
+					<h1>Frivillige opgaver</h1>
+					<div style="display: inline-block; width: 380px">
+						Hvis du gerne vil sættes på som mødeleder, indleder eller musiker, eller helst ikke vil sættes på f.eks. kaffehold, så udfyld dette skema.
+						<form action=”mailto:formand@odenselmu.dk” method="POST" style="margin-top: 20px">
+							<label for="fname"><b>Dit fulde navn *</b></label><br>
+							<input type="text" id="fname" name="fname" style="margin-bottom: 20px; height: 24px; width: 350px; border-color:#EEEEEE" required><br>
+							<b>Jeg er frisk på at være...</b><br>
+							<input type="checkbox" id="mødeleder" name="mødeleder" value="Mødeleder">
+							<label for="mødeleder"> Mødeleder</label><br>
+							<input type="checkbox" id="indleder" name="indleder" value="Indleder">
+							<label for="indleder"> Indleder</label><br>
+							<input type="checkbox" id="musiker" name="musiker" value="Musiker">
+							<label for="musiker"> Musiker</label><br><br>
+							<b>Fratagelse af opgaver</b><br>
+							<input type="radio" id="kaffehold" name="fratagelse" value="Fratagelse">
+							<label for="kaffehold">Jeg vil helst ikke sættes på kaffehold</label><br>
+							<input type="radio" id="stop" name="fratagelse" value="Stop">
+							<label for="stop">Jeg kommer ikke længere i LMU</label><br><br>
+							<label for="lname"><b>Evt. kommentar</b></label><br>
+							<textarea name="comment" form="usrform" style="height: 100px; width: 350px; font-family:'Arvo'; border-color:#D0D0D0; border-width: 2px"></textarea><br>
+							<input type="submit" value="Send**" id="program-button" style="width: 100px; margin-top: 10px">
+							<br><br>
+							<div style="font-size: 12px">
+								<b>*</b> Skal besvares<br>
+								<b>**</b> Selvom du har sendt denne formular, så skal du stadig underskrive en <a href="../filer/Politikker/Samtykkeerklæring.pdf">samtykkeerklæring</a> før vi kan skrive dit navn på programmet.
+							</div>
+						</form>
+					</div>
+					<div style="display: inline-block; width: 30%; vertical-align: top; margin-left: 40px; font-size: 14px; color: gray;">
+						<b>Mødeleder:</b><br>
+						Fører os igennem aftenens gang. Sørger for at der er en indledning (Man kan spørge andre), og kontakter taleren før tid. <a href="../filer/Huskelister/Huskeliste for mødeledere.pdf">Læs mere</a><br><br>
+						<b>Indleder:</b><br>
+						Læser en andagt, bibeltekst, deler en sang, salme, eller giver et vidnesbyrd.<br><br>
+						<b>Musiker:</b><br>
+						Leder os i lovsang til møderne, ved at spille musik og vælge de sange der skal synges. <a href="../filer/Huskelister/Huskeliste for pianister.pdf">Læs mere</a><br><br>
+						HUSK! Man skal ikke være perfekt for at påtage sig disse opgaver, for ellers ville ingen kunne tage dem.
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div id="footer-contact">
+					Luthersk Missions Unge i Odense<br>
+					Rosenlunden 15<br>
+					5000 Odense C<br>
+					odense@lmu.dk<br>
+					CVR-nr.: 30789334
+				</div>
+				<div id="footer-media">
+					<a href="https://www.lmbu.dk/lmu"><img src="../filer/Billeder/logoer/Medie-LMU.png" class="media"></a><br>
+					<a href="https://lmfyn.dk/"><img src="../filer/Billeder/logoer/Medie-LM.png" class="media"></a><br>
+					<a href="https://www.facebook.com/groups/odenselmu/"><img src="../filer/Billeder/logoer/Medie-Facebook.png" class="media"></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
