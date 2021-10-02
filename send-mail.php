@@ -21,7 +21,8 @@
 
     // Send email
     if($errors =='') {
-        header('Location: index.html');
+        $msg = "<p>Tak for din besked!</p>";
+        header('Location: kontakt.phtml?msg='.$msg);
         $headers =  'From: Kontakt formular <no-reply@odenselmu.dk>'. "\r\n" .
                     'Reply-To: '.$email.'' . "\r\n" .
                     'X-Mailer: PHP/' . phpversion();
@@ -29,6 +30,7 @@
         $message="Name: $name \n\nEmail: $email \n\nMessage: $message";
         mail($to, $email_subject, $message, $headers);
     } else {
-        header('Location: kontakt-fejl.html');
+        $msg = "<p style='color:red;'>Din besked kunne ikke sendes.</p>";
+        header('Location: kontakt.phtml?msg='.$msg);
     }
 ?>

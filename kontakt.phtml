@@ -36,7 +36,7 @@
 				<button id="main-menu-button" onclick="location.href='program/index.html'">Program</button>
 				<button id="main-menu-button" onclick="location.href='bibelstudie/index.html'">Bibelstudie</button>
 				<button id="main-menu-button" onclick="location.href='bliv-medlem.html'">Bliv medlem</button>
-				<button id="main-menu-button" onclick="location.href='kontakt.html'" style="background-color: #15808B">Kontakt</button>
+				<button id="main-menu-button" onclick="location.href='kontakt.phtml'" style="background-color: #15808B">Kontakt</button>
 			</div>
 			<div id="body">
 				<div id="body-contents">
@@ -52,6 +52,12 @@
 							<textarea name="message" style="height: 100px; width: 250px; font-family:'Arvo'; border-color:#D0D0D0; border-width: 2px" required></textarea><br>
 							<input type="submit" value="Send" id="program-button" style="width: 100px;">
 						</form>
+						<?php
+							if(isset($_GET['msg']))
+							{
+								echo $_GET['msg'];
+							}
+						?>
 					</div>
 				</div>
 			</div>
