@@ -1,5 +1,6 @@
 var year = new Date().getFullYear();
 var yearText = '';
+var random2 = performance.now();
 	
 if (week < 29){
 	yearText = (year-1).toString().substring(2,5) + '/' + year.toString().substring(2,5);
@@ -9,7 +10,7 @@ else {
 }
 
 var text = '../filer/Bibelstudie/';
-text += yearText.replace('/', '-') + '.txt';
+text += yearText.replace('/', '-') + '.txt?' + random2;
 
 var tableText = "";
 try {

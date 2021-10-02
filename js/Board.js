@@ -1,7 +1,7 @@
 var tableText = "";
 var random2 = performance.now();
 try {
-	readTextFile('../filer/Billeder/Profilbilleder/Bestyrelsen.txt');
+	readTextFile('../filer/Billeder/Profilbilleder/Bestyrelsen.txt?' + random2);
 }
 catch (err) {
 	
