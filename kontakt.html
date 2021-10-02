@@ -45,17 +45,12 @@
 						Ønsker du at sende en besked til Odense LMU, kan du udfylde nedenstående kontaktformular, eller sende en mail til <a href="mailto:odense@lmu.dk">odense@lmu.dk</a>.<br>
 						<form method="POST" action="send-mail.php" style="margin-top: 10px" accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; document.charset = 'ISO-8859-1'; window.onbeforeunload = function () {document.charset=originalCharset;};">
 							<label for="realname">Navn *</label><br>
-							<input type="text" id="realname" name="realname" style="margin-bottom: 15px; height: 24px; width: 250px; border-color:#EEEEEE"><br>
+							<input type="text" id="realname" name="realname" style="margin-bottom: 15px; height: 24px; width: 250px; border-color:#EEEEEE" required><br>
 							<label for="email">Email *</label><br>
-							<input type="text" id="email" name="email" style="margin-bottom: 10px; height: 24px; width: 250px; border-color:#EEEEEE"><br>
+							<input type="text" id="email" name="email" style="margin-bottom: 10px; height: 24px; width: 250px; border-color:#EEEEEE" required><br>
 							<label for="message">Besked *</label><br>
-							<textarea name="message" style="height: 100px; width: 250px; font-family:'Arvo'; border-color:#D0D0D0; border-width: 2px"></textarea><br>
+							<textarea name="message" style="height: 100px; width: 250px; font-family:'Arvo'; border-color:#D0D0D0; border-width: 2px" required></textarea><br>
 							<input type="submit" value="Send" id="program-button" style="width: 100px;">
-                        	<input type="hidden" name="recipient" value="formand@odenselmu.dk"/>
-	                        <input type="hidden" name="subject" value="Subject" />
-                        	<input type="hidden" name="redirect" value="index.html" />
-                        	<input type="hidden" name="missing_fields_redirect" value="index.html" />
-                        	<input type="hidden" name="required" value="realname,email,message" />
 						</form>
 					</div>
 				</div>
