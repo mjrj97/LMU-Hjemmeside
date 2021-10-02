@@ -29,6 +29,6 @@
         $message="Name: $name \n\nEmail: $email \n\nMessage: $message";
         mail($to, $email_subject, $message, $headers);
     } else {
-        echo $errors;
+        header('Location: kontakt-fejl.html');
     }
 ?>
