@@ -43,25 +43,31 @@
 					<h1>Frivillige opgaver</h1>
 					<div style="display: inline-block; width: 380px">
 						Hvis du gerne vil sættes på som mødeleder, indleder eller musiker, eller helst ikke vil sættes på f.eks. kaffehold, så udfyld dette skema.
-						<form action=”mailto:formand@odenselmu.dk” method="POST" style="margin-top: 20px">
-							<label for="fname"><b>Dit fulde navn *</b></label><br>
-							<input type="text" id="fname" name="fname" style="margin-bottom: 20px; height: 24px; width: 350px; border-color:#EEEEEE" required><br>
+						<form action="../send-mail.php" method="POST" style="margin-top: 20px">
+							<label for="realname"><b>Dit fulde navn *</b></label><br>
+							<input type="text" id="realname" name="realname" style="margin-bottom: 20px; height: 24px; width: 350px; border-color:#EEEEEE" required><br>
 							<b>Jeg er frisk på at være...</b><br>
-							<input type="checkbox" id="mødeleder" name="mødeleder" value="Mødeleder">
+							<input type="checkbox" id="mødeleder" name="opgaver[]" value="Mødeleder">
 							<label for="mødeleder"> Mødeleder</label><br>
-							<input type="checkbox" id="indleder" name="indleder" value="Indleder">
+							<input type="checkbox" id="indleder" name="opgaver[]" value="Indleder">
 							<label for="indleder"> Indleder</label><br>
-							<input type="checkbox" id="musiker" name="musiker" value="Musiker">
+							<input type="checkbox" id="musiker" name="opgaver[]" value="Musiker">
 							<label for="musiker"> Musiker</label><br><br>
 							<b>Fratagelse af opgaver</b><br>
-							<input type="radio" id="kaffehold" name="fratagelse" value="Fratagelse">
+							<input type="radio" id="kaffehold" name="fratagelse" value="Skal ikke sættes på kaffehold">
 							<label for="kaffehold">Jeg vil helst ikke sættes på kaffehold</label><br>
-							<input type="radio" id="stop" name="fratagelse" value="Stop">
+							<input type="radio" id="stop" name="fratagelse" value="Stopper i LMU">
 							<label for="stop">Jeg kommer ikke længere i LMU</label><br><br>
 							<label for="lname"><b>Evt. kommentar</b></label><br>
-							<textarea name="comment" form="usrform" style="height: 100px; width: 350px; font-family:'Arvo'; border-color:#D0D0D0; border-width: 2px"></textarea><br>
+							<textarea name="message" style="height: 100px; width: 350px; font-family:'Arvo'; border-color:#D0D0D0; border-width: 2px"></textarea><br>
 							<input type="submit" value="Send**" id="program-button" style="width: 100px; margin-top: 10px">
 							<br><br>
+							<?php
+							    if(isset($_GET['msg']))
+    							{
+    								echo $_GET['msg'];
+    							}
+						    ?>
 							<div style="font-size: 12px">
 								<b>*</b> Skal besvares<br>
 								<b>**</b> Selvom du har sendt denne formular, så skal du stadig underskrive en <a href="../filer/Politikker/Samtykkeerklæring.pdf">samtykkeerklæring</a> før vi kan skrive dit navn på programmet.

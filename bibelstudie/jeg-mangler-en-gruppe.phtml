@@ -43,9 +43,9 @@
 					<div style="display: inline-block; width: 40%">
 						<h1>Bibelstudie</h1>
 						Der vil blive dannet bibelstudiegrupper på ca. 4-6 personer (alt efter resultaterne af dette spørgeskema).
-						<form action=”mailto:formand@odenselmu.dk” method="POST" style="margin-top: 20px">
-							<label for="fname"><b>Dit fulde navn *</b></label><br>
-							<input type="text" id="fname" name="fname" style="margin-bottom: 20px; height: 24px; width: 350px; border-color:#EEEEEE" required><br>
+						<form action="../send-mail.php" method="POST" style="margin-top: 20px">
+							<label for="realname"><b>Dit fulde navn *</b></label><br>
+							<input type="text" id="realname" name="realname" style="margin-bottom: 20px; height: 24px; width: 350px; border-color:#EEEEEE" required><br>
 							<b>Hvor vil du gerne deltage i bibelstudie? *</b><br>
 							<input type="radio" id="lmu" name="hvor" value="LMU" required>
 							<label for="lmu"> I LMU's lokaler</label><br>
@@ -53,10 +53,16 @@
 							<label for="hjemme"> Hjemme hos andre LMU'er</label><br>
 							<input type="radio" id="ingenpræf" name="hvor" value="Ingen præf" required>
 							<label for="ingenpræf"> Ingen præferencer</label><br><br>
-							<label for="lname"><b>Evt. kommentar</b></label><br>
-							<textarea name="comment" form="usrform" style="height: 100px; width: 350px; font-family:'Arvo'; border-color:#D0D0D0; border-width: 2px"></textarea><br>
+							<label for="message"><b>Evt. kommentar</b></label><br>
+							<textarea name="message" style="height: 100px; width: 350px; font-family:'Arvo'; border-color:#D0D0D0; border-width: 2px"></textarea><br>
 							<input type="submit" value="Send**" id="program-button" style="width: 100px; margin-top: 10px">
 							<br><br>
+							<?php
+							if(isset($_GET['msg']))
+							{
+								echo $_GET['msg'];
+							}
+						    ?>
 							<div style="font-size: 12px">
 								<b>*</b> Skal besvares<br>
 								<b>**</b> Selvom du har sendt denne formular, så skal du stadig underskrive en <a href="../filer/Politikker/Samtykkeerklæring.pdf">samtykkeerklæring</a> før vi kan skrive dit navn på hjemmesiden.
