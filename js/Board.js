@@ -53,7 +53,7 @@ function writeManagement() {
 	//images
 	for (let i = 0; i < members; i++) {
 		document.write('<th style="width: ' + 1000/members + 'px" class="bestyrelsen">');
-		document.write('<img src="https://odenselmu.dk/onewebmedia/filer/Billeder/Profilbilleder/' + (i+1).toString() + '.png?' + random + '" style="width: ' + width + 'px; height: ' + height + 'px" class="bestyrelsenBillede">');
+		document.write('<img src="../filer/Billeder/Profilbilleder/' + (i+1).toString() + '.png?' + random + '" style="width: ' + width + 'px; height: ' + height + 'px" class="bestyrelsenBillede">');
 		document.write('</th>');
 	}
 	document.write('</tr>');
