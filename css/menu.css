@@ -15,6 +15,7 @@
 	display: inline-block;
 	font-family:'Arvo';
 	font-size: 16px;
+	transition: 0.3s;
 }
 
 #program-button {
@@ -27,6 +28,7 @@
 	display: inline-block;
 	font-family:'Arvo';
 	font-size: 16px;
+	transition: 0.3s;
 }
 
 #program-button:hover {
@@ -38,27 +40,34 @@
 }
 
 .dropdown {
-	position: relative;
-	display: inline-block;
-	height: 100%;
+    position: relative;
+    display: inline-block;
+    height: 100%;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #076973;
+    visibility: hidden;
+    position: absolute;
+    background-color: #076973;
 	min-width: 158px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+    z-index: 1;
 	text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    -webkit-transition: opacity 0.3s, visibility 0.3s;
+    -moz-transition: opacity 0.3s, visibility 0.3s;
+    -ms-transition: opacity 0.3s, visibility 0.3s;
+    -o-transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 0;
 }
 
 .dropdown-content a {
-	color: white;
+    color: white;
 	font-size: 16px;
 	padding: 20px 16px;
 	text-decoration: none;
 	display: block;
+	transition: 0.3s;
 }
 
 .dropdown-content a:hover {
@@ -66,5 +75,6 @@
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
+    visibility: visible;
+    opacity: 1;
 }
